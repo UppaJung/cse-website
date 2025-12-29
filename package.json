@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy --config=eleventy.config.ts",
     "serve": "npx @11ty/eleventy --config=eleventy.config.ts --serve"
   },
   "keywords": [],
