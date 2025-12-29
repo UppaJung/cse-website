@@ -1,0 +1,8 @@
+.test {
+	font-weight: bold;
+}
+
+.expert img {
+	max-width: min(50vw, 50vh, 12rem);
+}
+
