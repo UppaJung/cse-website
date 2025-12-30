@@ -90,6 +90,7 @@ header {
 
 .law {
 	width: fit-content;
+	min-width: min(50vw, 30rem);
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
