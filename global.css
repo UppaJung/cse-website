@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 .test {
 	font-weight: bold;
 }
@@ -46,7 +50,7 @@ header {
 	flex-direction: column;
 	width: 100%;
 	align-items: center;
-	background-color: light-dark(black, white);
+	background-color: light-dark(black, #f0f0f0);
 	color: light-dark(white, black);
 	margin: 0;
 	padding-top: 0.5rem;
@@ -117,15 +121,24 @@ header {
 	.case-name {
 		font-size: 110%;
 	}
+	.case-labels {
+		margin-left: 4rem;
+		display: flex;
+		flex-direction: row;
+		gap: 2rem;
+	}
+	.case-experts {
+		gap: 0.5rem;
+	}
 
 	a {
 		text-decoration: none;
 		color: light-dark(black, white);
 	}
+
 	.expert-name {
 		display: inline;
 		width: fit-content;
-		margin-left: 1rem;
 		padding: 0 1rem;
 		border-radius: 0.5rem;
 		background-color: light-dark(#f0f0f0, #101010);
