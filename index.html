@@ -1,40 +1,118 @@
 <!doctype html>
 <html lang="en" translate="no">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="google" content="notranslate">
-    <meta http-equiv="Content-Language" content="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="google" content="notranslate">
+		<meta http-equiv="Content-Language" content="en">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Computer Science Experts LLC</title>
-    <link rel="stylesheet" href="./global.css">
+		<link rel="stylesheet" href="./global.css">
 	</head>
 <body>
-<h1>Computer Science Experts, LLC</h1>
-</body>
-
+<header>
+	<div class="title">Computer Science Experts, LLC</div>
+	<div class="summary">
+		<span>Investigations and expert testimony</span>
+		<span>performed </span><!-- by world-renowned experts -->
+		<span>with obsessive diligence</span>
+	</div>
+	<div class="contact">
+		<a href="mailto:team@compsciexperts.com?subject=New%20Case">team@compsciexperts.com</a>
+	</div>
+</header>
 <main>
-	<section class="testifying-experts">
-		<h2>Testifying Experts</h2>
+	<!-- WHAT WE DO  -->
+	<h1>Why CSE?</h1>
+	<section>
+	 	<!-- <p class="pitch">
+			We are highly-respected in our fields, experienced in legal investigations and testimony, and work together.
+		</p> -->
+		<div class="full-pitch">
+			<div>Experts in their fields</div>
+			<div>experienced in legal investigations and testimony</div>
+			<div>working together</div>
+		</div>
 
-		<div class="expert">
+		<h2>Notable cases in which our experts have testified</h2>
+		<div class="law">
+			<div class="law-name">California Invasion of Privacy Act (CIPA)</div>
+			<div class="cases">
+				<div class="case">
+					<a class="case-name" href="https://www.courtlistener.com/docket/55370837/frasco-v-flo-health-inc/?page=4">Frasco v. Flo Health, Inc.</a>
+					<div class="case-labels">
+						<span class="outcome victory">Verdict in Favor</span>
+						<a href="#egelman" class="expert-name">Egelman</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="law">
+			<div class="law-name">Pennsylvania Wiretapping and Electronic Surveillance Control Act (WESCA)</div>
+			<div class="cases">
+				<div class="case">
+					<a class="case-name" href="https://www.courtlistener.com/docket/66676587/young-v-salesforce-inc/">Young, et al v. Salesforce, Inc.</a>
+					<div class="case-labels">
+						<span class="outcome pending">Pending</span>
+						<a href="#schechter" class="expert-name">Schechter</a>
+					</div>
+				</div>
+				<div class="case">
+					<a class="case-name" href="">FIXME</a>
+					<div class="case-labels">
+						<span class="outcome pending">Pending</span>
+						<a href="#schneier" class="expert-name">Schneier</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="law">
+			<div class="law-name">Video Privacy Protection Act (VPPA)</div>
+			<div class="cases">
+				<div class="case">
+					<a class="case-name" href="">FIXME</a>
+					<div class="case-labels">
+						<a href="#egelman" class="expert-name">Egelman</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="law">
+			<div class="law-name">FIXME</div>
+			<div class="cases">
+				<div class="case">
+					<a class="case-name" href="">FIXME</a>
+					<a href="#hochman" class="expert-name">Hochman</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- WHO WE ARE -->
+	<h1>Our Testifying Experts</h1>
+	<section class="testifying-experts">
+		<div id="egelman" class="expert">
+			<img src="./images/egelman.webp"/>
 			<h3>Serge Egelman</h3>
-			<img src="./images/egelman.jpg"/>
 			<div class="bio">
 				<p>
-					
-			</p>
+					Serge Egelman is the Research Director of the Usable Security and Privacy group at the International Computer Science Institute (ICSI), which is an independent research institute affiliated with the University of California, Berkeley. He is also Chief Scientist and co-founder of AppCensus, Inc., which is a startup that is commercializing his research by performing on-demand privacy analysis of mobile apps for developers, regulators, and watchdog groups. He conducts research to help people make more informed online privacy and security decisions, and is generally interested in consumer protection. This has included improvements to web browser security warnings, authentication on social networking websites, and most recently, privacy on mobile devices. Seven of his research publications have received awards at the ACM CHI conference, which is the top venue for human-computer interaction (HCI) research; his research on privacy on mobile platforms has received the Caspar Bowden Award for Outstanding Research in Privacy Enhancing Technologies, the USENIX Security Distinguished Paper Award, the Spanish Data Protection Authority's Emilio Aced Personal Data Protection Research Award, the CNIL-INRIA Privacy Research Award, and the Carnegie Mellon University CyLab Distinguished Alumni Award; he has also testified before Congress. His research has been cited in numerous lawsuits and regulatory actions, as well as featured in the New York Times, Washington Post, Wall Street Journal, Wired, CNET, NBC, and CBS. He received his PhD from Carnegie Mellon University and has previously performed research at Xerox Parc, Microsoft, and NIST.	
+				</p>
+			</div>
 		</div>
-		<div class="expert">
+		<div id="schneier" class="expert">
+			<img src="./images/schneier.webp"/>
 			<h3>Bruce Schneier</h3>
-			<img src="./images/schneier.jpg"/>
 			<div class="bio">
 				<p>
 					Bruce Schneier is an internationally renowned security technologist, called a “security guru” by the Economist. He is the New York Times best-selling author of 14 books -- ­including "A Hacker's Mind" -- ­as well as hundreds of articles, essays, and academic papers. His influential newsletter "Crypto-Gram" and blog "Schneier on Security" are read by over 250,000 people. Schneier is a Lecturer in Public Policy at the Harvard Kennedy School, a fellow at the Berkman-Klein Center for Internet and Society at Harvard University, a board member of the Electronic Frontier Foundation and AccessNow, and an advisory board member of EPIC and VerifiedVoting.org. He is the Chief of Security Architecture at Inrupt, Inc.
-			</p>
+				</p>
+			</div>
 		</div>
-		<div class="expert">
+		<div id="hochman" class="expert">
+			<img src="./images/hochman.webp"/>
 			<h3>Jonathan Hochman</h3>
-			<img src="./images/Jonathan-Hochman.jpg"/>
 			<div class="bio">
 				<p>
 					Jonathan Hochman, PhD serves as consulting and testifying expert for cases related to Internet marketing, Internet security, privacy, e-commerce, website development, digital forensics, and search engine optimization (SEO), as well as pay-per-click (PPC), mobile, and digital advertising.
@@ -47,9 +125,9 @@
 				</p>
 			</div>
 		</div>
-			<div class="expert">
-			<h3>Stuart Schechter</h3>
+		<div id="schechter" class="expert">
 			<img src="./images/schechter.webp"/>
+			<h3>Stuart Schechter</h3>
 			<div class="bio">
 				<p>
 					Stuart Schechter is researcher of computer security and privacy, human behavior, and ethics. His research helped debunk such  previously-common practices such as mandatory (e.g. 90-day) password changes, password-complexity policies, security questions (e.g., favorite pet), and site-authentication images. His expertise is in privacy investigations, and he has built software to help track the flow of information from websites to third parties, as well as to analyze exported analytics data and configuration files (e.g., Google Tag Manager containers).
@@ -57,9 +135,10 @@
 				<p>
 					Stuart is currently an Associate in the School of Engineering and Applied Sciences at Harvard University. Previously, he was a lecturer at the University of California at Berkeley, a Researcher at Microsoft Research (2007-2016), and a member of the technical staff at MIT Lincoln Laboratory (2004-2007). He received his Ph.D. in Computer Science from Harvard University In 2004, and his Bachelors of Science in Computer and Information Science (BSCIS) from The Ohio State University in 1996.				
 				</p>
+			</div>
 		</div>
 	</section>
 
 </main>
-
+</body>
 </html>
