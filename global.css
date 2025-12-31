@@ -164,6 +164,8 @@ header {
 		color: white;	
 	}
 	.pending {
+		/* Hiding pending labels until we decide if we even want to show them. SS-2025-12-31 */
+		display: none;
 		background-color: light-dark(rgba(255, 255, 224, 0.4), rgb(32, 32, 0, 0.4));
 		color: rgba(128, 128, 128, .75);
 	}
