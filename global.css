@@ -163,6 +163,10 @@ header {
 		background-color: #006000;
 		color: white;	
 	}
+	.settled {
+		background-color: #008000;
+		color: white;
+}
 	.pending {
 		/* Hiding pending labels until we decide if we even want to show them. SS-2025-12-31 */
 		display: none;
