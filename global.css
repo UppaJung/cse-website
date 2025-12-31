@@ -136,14 +136,19 @@ header {
 		text-decoration: none;
 		color: light-dark(black, white);
 	}
+	.footnote {
+		font-size: 60%;
+		vertical-align: super;
+	}
 
-	.expert-name {
+	.expert-label {
 		display: inline-block;
 		min-width: 4.25rem;
 		/* width: fit-content; */
 		text-align: center;
 		padding: 0 1rem;
 		border-radius: 0.5rem;
+		border: 1px solid rgba(128, 128, 128, 0.5);
 		background-color: light-dark(#f0f0f0, #101010);
 	}
 
@@ -154,17 +159,13 @@ header {
 		border-radius: 0.5rem;
 	}
 
-	.pending {
-		background-color: light-dark(rgba(255,255,255,0.5), rgba(0,0,0,.5));
-		color: rgba(128, 128, 128, 1);
-	}
-
 	.victory {
 		background-color: #006000;
 		color: white;	
 	}
 	.pending {
-		background-color: lightyellow;
+		background-color: light-dark(rgba(255, 255, 224, 0.4), rgb(32, 32, 0, 0.4));
+		color: rgba(128, 128, 128, .75);
 	}
 }
 
