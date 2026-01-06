@@ -122,6 +122,9 @@ header {
 	.case-experts {
 		text-align: right;
 	}
+	.case-number {
+		color: gray;
+	}
 
 	.outcome-column {
 		text-align: right;
