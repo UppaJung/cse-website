@@ -7,7 +7,7 @@
 }
 
 section {
-	margin-left: 1.5rem;
+	margin-left: min(1.5rem, 1vw);
 	margin-bottom: 2rem;
 }
 
@@ -55,15 +55,16 @@ header {
 	margin: 0;
 	padding-top: 0.5rem;
 	.title {
-		font-size: 250%;	
+		font-size: min(250%, 6vw);	
 		font-family: sans-serif;
 		margin: 0 5vw;
 		text-align: center;
 		text-wrap: balance;
 	}
 	.summary {
-		font-size: 125%;
+		font-size: min(125%, 5vw);
 		margin: 0 5vw;
+		margin-top: .25rem;
 		text-align: center;
 		text-wrap: balance;
 
@@ -76,6 +77,7 @@ header {
 		box-sizing: border-box;
 		margin-top: .25rem;
 		padding: .25rem 1rem;
+		font-size: min(125%, 5vw);	
 		background-color: light-dark(#202020, #e0e0e0);
 		display: flex;
 		flex-direction: row;
@@ -90,11 +92,12 @@ header {
 
 
 .law {
+	font-size: min(110%, 2.5vw);
 	min-width: min(50vw, 30rem);
 	background-color: light-dark(#e0e0e0, #202020);
 	padding: 0.25rem 1rem;
 	margin: 0.5rem 0;
-	margin-left: 1.5rem;
+	margin-left: min(1.5rem, 1vw);
 	border-radius: 0.5rem;
 
 	th {
@@ -103,21 +106,20 @@ header {
 
 	td + td {
   	/* Transparent border to simulate spacing without extra padding */
-  	border-left: min(2rem, 2vw) solid transparent; 
+  	border-left: min(2rem, 1vw) solid transparent; 
   	background-clip: padding-box; /* Ensure background doesn't draw below the transparent border */
 	}
 
 	.law-name {
 		font-weight: bold;
- 		font-size: 110%;
 		font-family: serif;
 		border-bottom: black dotted 1px;
 		margin-bottom: 0.25rem;
 	}
 
 	.case-name {
-		font-size: 110%;
-		min-width: min(13rem, 15vw);
+		font-size: min(100%, 2vw);
+		min-width: min(15rem, 30vw);
 	}
 	.case-experts {
 		text-align: right;
@@ -133,7 +135,7 @@ header {
 		display: inline-block;
 		box-sizing: border-box;
 		min-width: 6.25rem;
-		padding: 0 1rem;
+		padding-left: min(1rem, 0.5vw);
 		/* width: fit-content; */
 		text-align: center;
 		border-radius: 0.5rem;
@@ -209,7 +211,7 @@ main {
 		background-color: light-dark(#c8c8d8, #303030);
 		padding: 0.5rem;
 		border-radius: 0.5rem;
-		max-width: 50vw;
+		max-width: 65vw;
 		text-align: center;
 		text-wrap: balance;
 	}
@@ -241,5 +243,6 @@ main {
 	color: light-dark(#400000, #ffc0c0);	
 }
 .victor {
+	display: none;
 	color: light-dark(#004000, #c0ffc0);
 }
