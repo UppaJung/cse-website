@@ -45,13 +45,16 @@ body {
 	margin: 0;
 }
 
-header {
+header, footer {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	align-items: center;
 	background-color: light-dark(black, #f0f0f0);
 	color: light-dark(white, black);
+}
+
+header {
 	margin: 0;
 	padding-top: 0.5rem;
 	.title {
@@ -89,8 +92,15 @@ header {
 		}
 	}
 }
-
-
+section#footnotes {
+	margin-top: 2rem;
+	padding-top: 1rem;
+	border-top: 2px solid rgba(128, 128, 128, 0.5);
+}
+footer {
+	margin-top: max(2rem, 2vh);
+	padding: 0.75rem 0;
+}
 .law {
 	font-size: min(110%, 2.5vw);
 	min-width: min(50vw, 30rem);
@@ -166,7 +176,12 @@ header {
 	.settled {
 		background-color: #008000;
 		color: white;
-}
+	}
+	/* override .victory and .settled to be more humble */
+	.victory, .settled {
+		background-color: #C0C0C0;
+	}
+
 	.pending {
 		/* Hiding pending labels until we decide if we even want to show them. SS-2025-12-31 */
 		display: none;
