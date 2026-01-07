@@ -252,12 +252,19 @@ main {
 	font-style: normal;
 }
 .our-client {
-	color: light-dark(#004000, #c0ffc0);
+	/* color: light-dark(#004000, #c0ffc0); */
+	color: light-dark(#002000, #d0ffd0);
+	text-decoration: underline rgba(128, 128, 128, 0.5);
 }
-.our-opponent {
+/* .our-opponent {
 	color: light-dark(#400000, #ffc0c0);	
-}
+} */
 .victor {
 	display: none;
 	color: light-dark(#004000, #c0ffc0);
+}
+
+
+.expert-label img {
+	max-height: 1rem;
 }
