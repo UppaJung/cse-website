@@ -10,7 +10,7 @@ section {
 .note {
 	margin-left: min(2.25rem, 3vw);
 	font-style: italic;
-	font-size: 80%;
+	font-size: .7rem;
 }
 
 
@@ -104,14 +104,18 @@ footer {
 	margin-top: max(2rem, 2vh);
 	padding: 0.75rem 0;
 }
-.law {
+.subsection {
+	margin-left: min(1.5rem, 1vw);
+}
+table.law {
 	font-size: min(110%, 2.5vw);
 	min-width: min(50vw, 30rem);
+	max-width: 100%;
+	overflow-x: clip;
 	background-color: light-dark(#e0e0e0, #202020);
-	padding: 0.25rem 1rem;
+	padding: 0.25rem .25rem;
 	margin: 0.5rem 0;
-	margin-left: min(1.5rem, 1vw);
-	border-radius: 0.5rem;
+	border-radius: 0.33rem;
 
 	th {
 		text-align: left;
@@ -138,6 +142,7 @@ footer {
 		display: flex;
 		flex-direction: row;
 		justify-content: end;
+		flex-wrap: wrap;
 		align-items: end;
 	}
 	.case-number {
