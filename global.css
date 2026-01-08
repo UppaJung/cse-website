@@ -8,9 +8,9 @@ section {
 }
 
 .note {
-	margin-left: min(2.25rem, 3vw);
+	margin-left: min(1rem, 1vw);
 	font-style: italic;
-	font-size: .7rem;
+	font-size: .75rem;
 }
 
 
