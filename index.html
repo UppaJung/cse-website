@@ -304,6 +304,36 @@
 			</div>
 		</div>
 	</section>
+		<!-- WHO WE ARE -->
+	<h1>Contact us</h1>
+	<section class="contact-us">
+		<p>
+			You can contact us by emailing <a href="mailto:team@cse.llc" target="_blank">team@cse.llc</a> and your message will immediately be routed to everyone whose picture you see above. Really!
+		</p><p>
+			If you find it convenient to compose your email to us on this page, you can use the form below.
+			If you want to reach one of us specifically, use their first name @cse.llc.
+		</p>
+		<form>
+			<div>
+				<label class="message recipient" for="message-recipient">To</label>
+				<input id="message-recipient" class="recipient" value="team@cse.llc" disabled>
+			</div>
+			<div>
+				<label class="message subject" for="message-subject">Subject</label>
+				<input id="message-subject" class="subject" value="Inquiry">
+			</div>
+			<div>
+				<label class="message body" for="message-subject">Message</label>
+				<textarea id="message-body">CSE Team,
+
+We would like to inquire about your availability for a case regarding…
+				</textarea>
+			</div>
+			<div>
+				<button id="submit-email">Open in my email app</button>
+			</div>
+		</form>
+	</section>
 	<!-- <section id="footnotes">
 		<div id="footnote-outside-cases">
 			<sup>1</sup>Our list of cases includes the work of experts performed prior to, or outside of, CSE.
@@ -317,4 +347,16 @@
 		<div>Registered in MA.</div>
 	</footer>
 </body>
+<script>
+	document.getElementById("submit-email").addEventListener("click", (e) => {
+		e.preventDefault();
+		const url = `mailto:team@cse.llc?subject=${
+			encodeURIComponent(document.getElementById('message-subject').value)
+		}&body=${
+			encodeURIComponent(document.getElementById('message-body').value.trim().replaceAll("\n","\r\n"))
+		}`
+//		console.log(url);
+		window.open(url);
+	})
+</script>
 </html>

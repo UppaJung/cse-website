@@ -283,3 +283,40 @@ main {
 .external-case {
 	display: none;
 }
+form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section.contact-us {
+	font-size: 120%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	width: min(80vw, 40rem);
+	margin-left: auto;
+	margin-right: auto;
+
+	div {
+		width: 100%;
+		margin: .25rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+	p {
+		margin: .25rem 0;
+	}
+}
+.contact-us textarea, .contact-us input {
+	width: 100%;
+}
+.contact-us input.recipient {
+	width: fit-content;
+	padding: 0 0.25rem;
+}
+.contact-us textarea {
+	height: 6rem;
+}
