@@ -223,6 +223,13 @@ main {
 
 .expert h3 {
 	font-size: 160%;
+	margin-bottom: 0.5rem;
+}
+.expert h3 + h4 {
+	font-size: 140%; 
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: .25rem;
 }
 
 
