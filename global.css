@@ -219,12 +219,28 @@ main {
 
 .expert .bio {
 	font-size: 120%;
+	p {
+		margin-top: 0;
+		margin-bottom: .5rem;
+	}
 }
 
-.expert h3 {
-	font-size: 160%;
+.expert .bio.compressed {
+	mask-image: linear-gradient(to bottom, #000, transparent);
+	max-height: 3rem;
 }
 
+.expert h3 + h4 {
+	font-size: 140%; 
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: .25rem;
+	margin-bottom: 0;
+}
+
+.expert .roles {
+	margin-bottom: 0.25rem;
+}
 
 .full-pitch {
 	font-size: 150%;
